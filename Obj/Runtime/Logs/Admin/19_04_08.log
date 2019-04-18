@@ -1,0 +1,239 @@
+[ 2019-04-08T09:17:00+08:00 ] 59.41.4.16 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+
+[ 2019-04-08T09:17:00+08:00 ] 59.41.4.16 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `ym_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ym_config` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Use of undefined constant is_code - assumed 'is_code' /www/wwwroot/www.gdymdz.com/Obj/Runtime/Cache/Admin/79d8cc755542b0d66efe35a679f17ede.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2019-04-08T09:17:00+08:00 ] 59.41.4.16 /index.php/Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2019-04-08T09:17:00+08:00 ] 59.41.4.16 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+
+[ 2019-04-08T09:17:01+08:00 ] 59.41.4.16 /index.php/Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2019-04-08T09:17:14+08:00 ] 59.41.4.16 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `ym_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ym_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ym_auth_member` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ym_auth_member` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Illegal offset type in isset or empty /www/wwwroot/www.gdymdz.com/Core/Library/Think/Model.class.php 第 445 行.
+SQL: UPDATE `ym_auth_member` SET `last_time`='1554686234',`last_ip`='59.41.4.16',`login_count`='5',`token`='0b02ad5a19a9beede8b4db2f51a45a58' WHERE `uid` = 18 [ RunTime:0.0034s ]
+
+[ 2019-04-08T09:17:16+08:00 ] 59.41.4.16 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `ym_auth_member` [ RunTime:0.0006s ]
+SQL: SELECT member.*,groups.title as group_title,groups.rules as group_rules FROM ym_auth_member member INNER JOIN ym_auth_group as groups on member.group_id = groups.id  WHERE member.uid = '18' LIMIT 1   [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `ym_config` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ym_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ym_auth_menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ym_auth_menu` WHERE `name` = 'Admin/Index/index' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ym_auth_menu` WHERE `is_show` = 1 AND (  `id` IN ('12','13','18','17','16','14','21','22','23','26','28','27','30','29','6','9','8','10','7','') OR `check` = 0 ) ORDER BY `pid` asc,`order` asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ym_auth_menu` WHERE `name` = 'Admin/Index/index' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ym_auth_menu` WHERE `id` IN ('0','1')  [ RunTime:0.0002s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [8] Undefined variable: str /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 69 行.
+NOTIC: [8] Undefined variable: str /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 69 行.
+NOTIC: [8] Undefined variable: str /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+SQL: SELECT * FROM `ym_auth_menu` WHERE `name` = 'Admin/Index/retdata' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant headimg - assumed 'headimg' /www/wwwroot/www.gdymdz.com/Obj/Runtime/Cache/Admin/3f39898da0159560a3830ebfab1b1405.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2019-04-08T09:17:16+08:00 ] 59.41.4.16 /index.php/Admin/Index/getFile/code/1554342292960
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `ym_auth_member` [ RunTime:0.0006s ]
+SQL: SELECT member.*,groups.title as group_title,groups.rules as group_rules FROM ym_auth_member member INNER JOIN ym_auth_group as groups on member.group_id = groups.id  WHERE member.uid = '18' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ym_config` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ym_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ym_auth_menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ym_auth_menu` WHERE `name` = 'Admin/Index/getFile' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ym_auth_menu` WHERE `is_show` = 1 AND (  `id` IN ('12','13','18','17','16','14','21','22','23','26','28','27','30','29','6','9','8','10','7','') OR `check` = 0 ) ORDER BY `pid` asc,`order` asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ym_auth_menu` WHERE `name` = 'Admin/Index/getFile' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ym_auth_menu` WHERE `id` IN ('0','1','25')  [ RunTime:0.0003s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 35 行.
+NOTIC: [8] Undefined index: disabled /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 38 行.
+NOTIC: [8] Undefined variable: str /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 69 行.
+NOTIC: [8] Undefined variable: str /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 69 行.
+NOTIC: [8] Undefined variable: str /www/wwwroot/www.gdymdz.com/Obj/Admin/Common/function.php 第 69 行.
+SQL: SHOW COLUMNS FROM `ym_files` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ym_files` WHERE `code` = '1554342292960' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-04-08T09:54:55+08:00 ] 42.236.10.114 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+
+[ 2019-04-08T09:55:01+08:00 ] 42.236.10.114 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `ym_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ym_config` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Use of undefined constant is_code - assumed 'is_code' /www/wwwroot/www.gdymdz.com/Obj/Runtime/Cache/Admin/79d8cc755542b0d66efe35a679f17ede.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2019-04-08T09:55:12+08:00 ] 42.236.10.114 /index.php/Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+

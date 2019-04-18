@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <include file='Common/meta' />
+</head>
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <include file='Common/top' />
+        <include file='Common/nav' />
+        <div class="layui-body">
+            <div class="layui-card">
+                <div class="layui-card-header layui-bg-gray">{$menu_nav}</div>
+                <div class="layui-card-body">
+                    <div class="layui-tab" lay-filter="test">
+                        <ul class="layui-tab-title">
+                            <li class="layui-this" lay-id="11">系统设置</li>
+<!--                            <li lay-id="22">库存设置</li>
+                            <li lay-id="33">其它设置</li>-->
+                        </ul>
+                        <div class="layui-tab-content">
+                            <div class="layui-tab-item layui-show">
+                                <form class="layui-form conf-form" action="{:U('Config/index')}">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">系统名称</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="title" value='{$config.title}' required  lay-verify="required" placeholder="请输入系统名称" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">公司名称</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="company" value='{$config.company}' required  lay-verify="required" placeholder="请输入公司名称" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">公司网址</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="url" value='{$config.url}' required  lay-verify="required" placeholder="请输入公司网址,例: http://www.baidu.com" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">网站关键字</label>
+                                        <div class="layui-input-block">
+                                            <textarea name="keywords" placeholder="用于搜索引擎识别的站点关键字,有利于SEO优化,每个关键字需以英文半角逗号隔开,长度限制256个字符" class="layui-textarea">{$config.keywords}</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">网站描述</label>
+                                        <div class="layui-input-block">
+                                            <textarea name="description" placeholder="用于描述站点的简要信息,内容长度限制256个字符" class="layui-textarea">{$config.description}</textarea>
+                                        </div>
+                                    </div>                                    
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">公司电话</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="tel" value='{$config.tel}' required  lay-verify="required" placeholder="请输入公司电话号码" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">公司邮箱</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="email" value='{$config.email}' placeholder="请输入公司电子邮箱" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">验证码开关</label>
+                                        <div class="layui-input-inline">
+                                            <input type="checkbox" name="is_code" lay-skin="switch"  lay-text="ON|OFF" <eq name='config[is_code]' value='1'>checked</eq>>
+                                        </div>
+                                        <div class="layui-form-mid layui-word-aux">登陆界面验证码开关</div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">JS脚本</label>
+                                        <div class="layui-input-block">
+                                            <textarea name="foot" placeholder="用于放置百度搜索脚本或其它相关的JS脚本" class="layui-textarea">{$config.foot}</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item layui-form-text">
+                                        <label class="layui-form-label">备注信息</label>
+                                        <div class="layui-input-block">
+                                            <textarea name="remark" placeholder="请输入内容" class="layui-textarea">{$config.remark}</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <div class="layui-input-block">
+                                            <button class="layui-btn" type='submit'>提交保存</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+<!--                            <div class="layui-tab-item">
+                                <form class="layui-form conf-form" action="{:U('System/index')}">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">库存报警值</label>
+                                        <div class="layui-input-inline">
+                                            <input type="number" name="stock" value='{$config.stock}' required  lay-verify="required" placeholder="请输入库存报警值" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">减库存设置</label>
+                                        <div class="layui-input-inline">
+                                            <select name='stock_switch'>
+                                                <option value='0'>创建订单时</option>
+                                                <option value='1' <eq name='conf[stock_switch]' value='1'>selected</eq>>处理订单时</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <div class="layui-input-block">
+                                            <button class="layui-btn" type='submit'>提交保存</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="layui-tab-item">其它设置</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <include file='Common/footer' />
+    </div>
+    <script>
+        layui.use('form', function () {
+            var form = layui.form, $ = layui.jquery, element = layui.element;
+            var layid = location.hash.replace(/^#vid=/, '');
+            element.tabChange('test', layid);
+            $('.conf-form').submit(function () {
+                $_this = $(this);
+                $.post($_this.attr('action'), $_this.serialize(), function (data) {
+                    layer.msg(data.msg, {
+                        shade: [0.8, '#393D49'],
+                        shadeClose: true
+                    });
+                });
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

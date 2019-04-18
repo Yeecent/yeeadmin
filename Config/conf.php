@@ -4,9 +4,9 @@ return array(
     /* 数据库设置 */
     'DB_TYPE' => 'mysqli', // 数据库类型
     'DB_HOST' => '127.0.0.1', // 服务器地址
-    'DB_NAME' => 'www_gdymdz_com', // 数据库名
-    'DB_USER' => 'www_gdymdz_com', // 用户名
-    'DB_PWD' => 'iMDFLYb3hyETsCxN', // 密码
+    'DB_NAME' => 'yeeadmin', // 数据库名
+    'DB_USER' => 'root', // 用户名
+    'DB_PWD' => '08194437', // 密码
     'DB_PORT' => '3306', // 端口
     'DB_PREFIX' => 'ym_', // 数据库表前缀
     'DB_PARAMS' => array(), // 数据库连接参数
